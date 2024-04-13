@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Page</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css  ">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="a.jpg">
+  <link rel="preload" as="image" href="b.jpg">
+  <link rel="preload" as="image" href="c.jpg">
+  <link rel="preload" as="image" href="d.jpg">
+  <link rel="preload" as="image" href="e.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <ion-icon name="banner" aria-hidden="true"></ion-icon>
+
+        <div class="span">STUDENT DASHBOARD</div>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link " data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About </a>
+          </li>
+
+          <li>
+            <a href="#class" class="navbar-link" data-nav-link>Courses</a>
+          </li>
+
+          <li>
+            <a href="calendar.pdf" class="navbar-link" data-nav-link target="_blank">Academic Calender</a>
+          </li>
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Insights</a>
+          </li>
+
+          <li>
+            <a href="receipt.html" class="navbar-link" data-nav-link target="_blank">See MarkSheet</a>
+            
+          </li>
+
+        </ul>
+
+      </nav>
+
+      
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero bg-dark has-after has-bg-image" id="home" aria-label="hero" data-section
+        style="background-image: url('./assets/images/hero-bg.png')">
+        <div class="container">
+
+          <div class="hero-content">
+
+           
+
+            <h1 class="h1 hero-title">Wisdom is more important than Strength!</h1>
+
+            <p class="section-text">
+              Whatever you do, work at it with all your heart, as working for the Lord, not for human masters !
+            </p>
+
+            <a href="https://www.jigsawplanet.com/?rc=play&pid=2548a8cd6623" class="btn btn-primary" target="_blank">Activate Brain</a>
+
+          </div>
+
+          <div class="hero-banner">
+
+            <img src="books.jpg" width="500" height="800" alt="hero banner" class="w-100">
+
+           
+            
+            
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <div class="about-banner has-after">
+            <img src="studies.jpg" width="660" height="648" loading="lazy" alt="about banner"
+              class="w-100">
+
+            
+
+          
+          </div>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">About Us</p>
+
+            <h2 class="h2 section-title">Student Portal</h2>
+
+            <p class="section-text">
+              Creating a full-fledged student portal involves a combination of HTML, CSS, JavaScript for the front-end, and a back-end technology like PHP, Python, or Node.js for handling server-side logic and database operations. Helping you with small tasks
+            </p>
+
+            <p class="section-text">
+              A student portal is a centralized online platform designed to provide students with access to various academic and administrative services. 
+            </p>
+
+            <div class="wrapper">
+
+              
+
+              <a href="#blog" class="btn btn-primary">Explore More</a>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #VIDEO
+      -->
+      <div id="youtube-video">
+      <section class="section video" aria-label="video">
+        <div class="container">
+
+          <div class="video-card has-before has-bg-image"
+            style="background-image: url('./assets/images/video-banner.jpg')">
+
+            <h2 class="h2 card-title">Watch more on youtube</h2>
+
+            <button class="play-btn" aria-label="play video"><a href="https://youtu.be/ZIqxftmwsBI?si=GbhzCGAxHHrtypwB" target="_blank"><ion-icon name="play-sharp" aria-hidden="true"></ion-icon></a>
+              
+            </button>
+
+
+            
+
+          </div>
+
+        </div>
+      </section>
+      </div>
+
+
+
+
+
+      <!-- 
+        - #CLASS
+      -->
+
+      <section class="section class bg-dark has-bg-image" id="class" aria-label="class"
+        style="background-image: url('./assets/images/classes-bg.png')">
+        <div class="container">
+
+          <p class="section-subtitle" id="classes">Courses</p>
+
+          <h2 class="h2 section-title text-center">Find your Suitable course</h2>
+
+          <ul class="class-list has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="html.png" width="416" height="240" 
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Fundamentals of Html5</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    HTML is the standard markup language for Web pages.
+
+With HTML you can create your own Website.
+
+HTML is easy to learn - You will enjoy it!
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <a href="https://www.w3schools.com/html/html_editors.asp"><img src="pb.png"  width="50" height="50"></a> 
+                    </div>
+
+                    
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="css.png" width="400" height="200" 
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Fundamentals of CSS3</a>
+                    </h3>
+                    
+                  </div>
+
+                  <p class="card-text">
+                    CSS is the language we use to style an HTML document.
+
+                    CSS describes how HTML elements should be displayed.
+                    
+                    This tutorial will teach you CSS from basic to advanced
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <a href="https://www.w3schools.com/html/html_editors.asp"><img src="pb.png"  width="50" height="50"></a> 
+
+                      
+                    </div>
+
+                    <div class="progress-bg">
+                      
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="java.png" width="416" height="240" loading="lazy" alt="Power Yoga"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    
+
+                    <h3 class="h3">
+                      <a href="#https://www.w3schools.com/java/default.asp" class="card-title">Java Basics</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    Java is a popular programming language.
+
+Java is used to develop mobile apps, web apps, desktop apps, games and much more
+                  </p>
+
+                  <div class="card-progress">
+                    <div class="progress-wrapper">
+                      <a href="https://www.w3schools.com/html/html_editors.asp"><img src="pb.png"  width="50" height="50"></a> 
+
+                      
+                    </div>
+                    
+
+                    
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog" aria-label="blog">
+        
+        <p class="section-subtitle"><center>Our News</center></p>
+
+        <h2 class="h2 section-title text-center"><center>Latest Blog Feed</center></h2>
+        <div class="container2">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/d9gwmyPMByM?si=JY780rpccPSqA_iV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Tuw8hxrFBH8?si=wub1d7BF4d73_QmP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>   
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top bg-dark has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          
+
+          
+
+          <div class="wrapper">
+
+            
+
+            <ul class="footer-brand-list">
+
+              <img src="mind.png" height="450px" width="450px"
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Our Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Courses</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Insights</a>
+          </li>
+
+          <li>
+            <a href="calculation.html" class="footer-link">Calculate</a>
+          </li>
+          <li>
+            <a href="calendar.pdf" class="footer-link">Academic Calender</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Contact Us</p>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="location" aria-hidden="true"></ion-icon>
+            </div>
+
+            <address class="address footer-link">
+              Karunya Nagar, Coimbatore, Tamil Nadu 641114
+            </address>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="tel:18001213637" class="footer-link">1800-121-3637</a>
+
+              <a href="tel:+917904455223" class="footer-link">7904455223</a>
+            </div>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="mail" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="mailto:mpaulcbe@gmail.com" class="footer-link">mpaulcbe@gmail.com</a>
+
+              <a href="mailto:ramly@gmail.com" class="footer-link">ramly@gmail.com</a>
+            </div>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Your mail id:</p>
+          </li>
+
+          <li>
+            <form action="" class="footer-form">
+              <input type="email" name="email_address" aria-label="email" placeholder="Email Address" required
+                class="input-field">
+
+              <button type="submit" class="btn btn-primary" aria-label="Submit">
+                <ion-icon name="chevron-forward-sharp" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+          </li>
+
+          <li>
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+       
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link has-before">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link has-before">Terms & Condition</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up-sharp" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

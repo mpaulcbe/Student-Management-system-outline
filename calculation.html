@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grade Calculator</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+    #container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        margin-top: 0;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"], input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+    #result {
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+
+<div id="container">
+    <h2>Grade Calculator</h2>
+    <form id="gradeForm">
+        <label for="subject1">Subject 1:</label>
+        <input type="text" id="subject1Name" placeholder="Subject Name">
+        <input type="number" id="subject1" placeholder="Marks out of 100">
+        
+        <label for="subject2">Subject 2:</label>
+        <input type="text" id="subject2Name" placeholder="Subject Name">
+        <input type="number" id="subject2" placeholder="Marks out of 100">
+        
+        <label for="subject3">Subject 3:</label>
+        <input type="text" id="subject3Name" placeholder="Subject Name">
+        <input type="number" id="subject3" placeholder="Marks out of 100">
+        
+        <label for="subject4">Subject 4:</label>
+        <input type="text" id="subject4Name" placeholder="Subject Name">
+        <input type="number" id="subject4" placeholder="Marks out of 100">
+        
+        <label for="subject5">Subject 5:</label>
+        <input type="text" id="subject5Name" placeholder="Subject Name">
+        <input type="number" id="subject5" placeholder="Marks out of 100">
+        
+        <label for="subject6">Subject 6:</label>
+        <input type="text" id="subject6Name" placeholder="Subject Name">
+        <input type="number" id="subject6" placeholder="Marks out of 100">
+        
+        <button type="button" onclick="calculateResult()">Calculate</button>
+    </form>
+    
+    <div id="result"></div>
+</div>
+
+<script>
+    function calculateResult() {
+        var subject1 = parseFloat(document.getElementById("subject1").value);
+        var subject2 = parseFloat(document.getElementById("subject2").value);
+        var subject3 = parseFloat(document.getElementById("subject3").value);
+        var subject4 = parseFloat(document.getElementById("subject4").value);
+        var subject5 = parseFloat(document.getElementById("subject5").value);
+        var subject6 = parseFloat(document.getElementById("subject6").value);
+        
+        var totalMarks = subject1 + subject2 + subject3 + subject4 + subject5 + subject6;
+        var percentage = (totalMarks / 600) * 100;
+        
+        var grade;
+        if (percentage >= 90) {
+            grade = "A+";
+        } else if (percentage >= 80) {
+            grade = "A";
+        } else if (percentage >= 70) {
+            grade = "B";
+        } else if (percentage >= 60) {
+            grade = "C";
+        } else if (percentage >= 50) {
+            grade = "D";
+        } else {
+            grade = "F";
+        }
+        
+        var distinction = percentage >= 80 ? "Distinction" : "No Distinction";
+        var passFail = percentage >= 50 ? "Pass" : "Fail";
+        
+        var resultHTML = "<h3>Result:</h3>";
+        resultHTML += "<p>Total Marks: " + totalMarks + "</p>";
+        resultHTML += "<p>Percentage: " + percentage.toFixed(2) + "%</p>";
+        resultHTML += "<p>Grade: " + grade + "</p>";
+        resultHTML += "<p>Distinction: " + distinction + "</p>";
+        resultHTML += "<p>Status: " + passFail + "</p>";
+        
+        document.getElementById("result").innerHTML = resultHTML;
+    }
+</script>
+
+</body>
+</html>
